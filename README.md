@@ -89,7 +89,9 @@ the only thing on the line:
           "paths": [
             "/var/log/apache/httpd-*.log"
           ],
-          "fields": { "type": "apache" }
+          "fields": { "type": "apache" }.
+          #Specify how long to keep the file handle on the file after the last update.
+          "dead time": "10m"
         }
       ]
     }
